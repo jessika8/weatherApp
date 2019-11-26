@@ -1,0 +1,61 @@
+  {{!-- <header class="header">
+<h1>Current Weather Data for <h1 class="locationName">{{location}}</h1>
+</h1>
+</header>
+
+<div class="mainDiv">
+    <p>The tempriture is: {{temp}}C</p>
+    <p>The wind speed is: {{wind}}m/s</p>
+    <p>There is exactly {{cloud}} clouds in the sky</p>
+    <P>Description: {{description}}</P>
+</div>
+<img class="img" src="./img/seasons.jpg" alt=""> --}}
+{{!-- This is not very dynamic --}}
+
+
+
+
+<div class="wholebody">
+<h1>Current Weather Data</h1>
+
+{{!-- Post - once this form has been filled in , post where it needs to go --}}
+{{!-- If we click submit, it is going to send the info to '/; and this means it is going to send the info index.hbs   it depends what name you will have in ./, it can be ./fiveDayWeater, it is sending there--}}
+{{!-- This is form for the city name and the country name and it is all a "formBox" --}}
+<div class="formBox">
+<form action="/" method="POST">
+<label for="location">Location: </label>
+<input type="text" name="location">
+<br>
+{{!-- <br>
+<input type="submit" value="send">
+</form> --}}
+{{!-- comment these out, this is for one sending box, but i created two, so i dont need them --}}
+
+<label for="countryCode">Country: </label>
+<input type="text" name="countryCode">
+<br>
+<div class="button">
+<input type="submit" value="Send">
+</div>
+</form>
+</div>
+
+<div class="middle">
+  {{!-- if there is an error, display that message --}}
+{{#if err}}
+<h3>{{err}}</h3>
+{{else}}
+
+<ul>
+    {{!-- #each - for each value inside of data we are going to display it in the below set up --}}
+    {{#each data}}
+    <li>{{@key}}  : {{this}}</li>
+    {{/each}}
+</ul>
+<img src="{{iconUrl}}" alt="">
+{{/if}}
+
+</div>
+</div>
+
+

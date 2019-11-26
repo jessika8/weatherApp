@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{!-- partials need > to pull it trough, nav bar will be rended on all pages --}}
+    {{> navbar}}
+
+    {{!-- '{{' double bracket - bringing something in from somewhere else}} --}}
+
+    {{!-- syntax for rendering, triple brackets, we use it for body, only tome when we are using 3 brackets, this will be rended on every single page --}}
+    {{{body}}}
+</body>
+
+</html>

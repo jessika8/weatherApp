@@ -1,0 +1,43 @@
+<div class="wholebodyFive">
+<h1>Five Day Weather Data</h1>
+
+{{!-- Post - once this form has been filled in , post where it needs to go --}}
+{{!-- If we click submit, it is going to send the info to '/; and this means it is going to send the info index.hbs --}}
+{{!-- This is form for the city name and the country name and it is all a "formBox" --}}
+<div class="formBoxFive">
+<form action="/fiveDayWeather" method="POST">
+<label for="location">Location: </label>
+<input type="text" name="location">
+<br>
+{{!-- <br>
+<input type="submit" value="send">
+</form> --}}
+{{!-- comment these out, this is for one sending box, but i created two, so i dont need them --}}
+
+<label for="countryCode">Country: </label>
+<input type="text" name="countryCode">
+<br>
+<div class="buttonFive">
+<input type="submit" value="Send">
+</div>
+</form>
+</div>
+
+<div class="middleFive">
+{{#if err}}
+<h3>{{err}}</h3>
+{{else}}
+
+<ul>
+    {{!-- #each - for each value inside of data we are going to display it in the below set up --}}
+    {{#each data}}
+    <li>{{@key}}  : {{this}}</li>
+    {{/each}}
+</ul>
+<img src="{{iconUrl}}" alt="">
+{{/if}}
+
+
+</div>
+
+</div>
