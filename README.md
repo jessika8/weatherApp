@@ -1,6 +1,6 @@
 # weatherApp
 This is a simple weather page. It displays information about current weather and a forecast for five days.
-weatherApp is using forecastle data from [OpenWeatherMap](https://openweathermap.org/). Forecast: Local forecast & world weather forecast on one page.
+weatherApp is using forecast data from [OpenWeatherMap](https://openweathermap.org/). Forecast: Local forecast & world weather forecast on one page.
 
 
 ## Motivation
