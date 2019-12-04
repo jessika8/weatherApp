@@ -1,11 +1,11 @@
 # weatherApp
-Weather app that displays current weather and five day forecast weather.
+A weather app that displays current weather and five-day forecast weather.
 
 
 ## Motivation
-I wanted to build a simple weather app that can display information about weather using two difgferent APIs. What is an API? How does handlebars work?
+I wanted to build a simple app that can display information about weather. I used two different APIs. What is an API? How do handlebars work?
 
-## What have i achieved so far?
+## What have I achieved so far?
 * API - application program interface
 * Handlebars - templating engine, I can separate the generation of HTML from the rest of your JavaScript and write cleaner code
 * Displaying current weather when inserting city and country
@@ -13,7 +13,7 @@ I wanted to build a simple weather app that can display information about weathe
 
 
 ## How can I make the project better?
-* Displayig the information for five day forecast (right now it just shows one day forecast, but it brings back five day data)
+* Displaying the information for five-day forecast (right now it just shows one day forecast, but it brings back five-day data)
 * Add another API to display more information about the weather
 
 
