@@ -1,9 +1,10 @@
 # weatherApp
-A weather app that displays current weather and five-day forecast weather.
+This is a simple weather page. It displays information about current weather and a forecast for five days.
+weatherApp is using forecastle data from [OpenWeatherMap](https://openweathermap.org/). Forecast: Local forecast & world weather forecast on one page.
 
 
 ## Motivation
-I wanted to build a simple app that can display information about weather. I used two different APIs. What is an API? How do handlebars work?
+I wanted to build a simple page that can display information about the weather. I used two different APIs. What is an API? How do handlebars work?
 
 ## What have I achieved so far?
 * API - application program interface
@@ -43,7 +44,7 @@ npm i body-parser
 4. Copy your API key
 5. Create a variable called APPID in the .env file and paste your key there
 6. In the weatherApp-master folder run npm start
-7. It will open the http://localhost:3000/
+7. It opens the http://localhost:3000/
 
 ## Contribute
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
