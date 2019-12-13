@@ -30,11 +30,27 @@
 
 <ul>
     {{!-- #each - for each value inside of data we are going to display it in the below set up --}}
+    <p>{{city}}</p>
+    <p>{{country}}</p>
+
     {{#each data}}
-    <li>{{@key}}  : {{this}}</li>
+    {{!-- key = date --}}
+        <p>{{@key}}</p>
+        {{!-- this -  each individual day that it loops over --}}
+            {{#each this}}
+            <ul>
+                {{!-- we dont want to display the icon url, ignoring it --}}
+                {{#unless @last}}
+                {{!-- keys and values --}}
+                <li>{{@key}}  : {{this}}</li>
+                {{/unless}}
+            </ul>
+            
+            {{/each}}
+            
+       <img src="{{this.iconUrl}}" alt="">
     {{/each}}
 </ul>
-<img src="{{iconUrl}}" alt="">
 {{/if}}
 
 
