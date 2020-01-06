@@ -43,7 +43,7 @@ npm i body-parser
 3. Create a user at the [OpenWeatherMap](https://openweathermap.org/) for a free API
 4. Copy your API key
 5. Create a variable called APPID in the .env file and paste your key there
-6. In the weatherApp-master folder run npm start
+6. In the weatherApp-master folder run node index.js
 7. It opens the http://localhost:3000/
 
 ## Contribute
