@@ -66,7 +66,7 @@ app.set('view engine', '.hbs');
 // });
 
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
   console.log('server on 3000.');
 
 });
