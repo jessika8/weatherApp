@@ -2,6 +2,8 @@
 This is a simple weather page. It displays information about current weather and a forecast for five days.
 weatherApp is using forecast data from [OpenWeatherMap](https://openweathermap.org/). Forecast: Local forecast & world weather forecast on one page.
 
+Hosted on [Heroku](http://simple-weather-app8.herokuapp.com/)
+
 
 ## Motivation
 I wanted to build a simple page that can display information about the weather. I used two different APIs. What is an API? How do handlebars work?
