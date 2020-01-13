@@ -30,7 +30,7 @@ h1 {
 }
 
 a:hover {
-    background-color: rgb(233, 219, 15);
+    background-color: rgb(243, 209, 17);
     color: black;
   }
   a {
@@ -47,4 +47,77 @@ a:hover {
 
   .navbar {
       margin-top: 6vh;
+  }
+  /* .five ul {
+      display: flex;
+      
+  } */
+
+  @media only screen and (max-width: 450px) {
+    body {
+        background-color: rgb(243, 209, 17);
+        background-image: none;
+        background-size: 200vh;
+        background-repeat: no-repeat;
+    
+    }
+    h1, .formBox, .middle {
+        text-align: center;
+    
+    }
+  
+    li {
+        list-style: none;
+        
+    }
+    h1, .formBoxFive, .middleFive {
+        text-align: center;
+    
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 3vh;
+        padding-left: 1vh;
+        
+    }
+    h1 {
+        padding-top: 23vh;
+        font-size: 6vh;
+        border-style: solid;
+        border-width: 1vh;
+        padding-top: 1vh;
+        margin-top: 20vh;
+        background-color: white;
+    }
+    .formBox, .formBoxFive {
+        border-style: solid;
+        border-width: 1vh;
+        margin-left: 18vw;
+        margin-right: 18vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        background-color: white;
+    }
+    
+    a:hover {
+        background-color: rgb(243, 209, 17);
+        color: black;
+      }
+      a {
+          color: black;
+          background-color: white;
+          padding-top: 2vh;
+          padding-bottom: 1.8vh;
+          padding-left: 1vh;
+          padding-right: 1vh;
+          border-style: solid;
+          border-width: 1vh;
+          border-color: black;
+          font-size: 2.5vh;
+      }
+    
+      .navbar {
+          margin-top: 6vh;
+      }
   }
